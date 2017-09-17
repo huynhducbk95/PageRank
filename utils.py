@@ -11,7 +11,7 @@ pagelink_path = DIR_PATH + '/data/viwiki-20170901-pagelinks.sql'
 def parse(pagelink_path):
     file_page = open("pages.txt", "w")
 
-    with open(pagelink_path) as infile:
+    with open(page_path) as infile:
         for line in infile:
             if line.split(' ')[0] == 'INSERT':
                 list_record = line.split('(')
